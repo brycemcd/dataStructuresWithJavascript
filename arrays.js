@@ -110,3 +110,23 @@ temps.add([51,52,53,54,55,56,57], 3);
 //temps.monthAverage();
 //temps.weekAverage(3);
 //temps.averageByWeek();
+
+var LettersToWord = function() {
+    this.letters = [];
+
+    this.toWord = function() {
+        var word = "";
+        for(i=0; i < this.letters.length; i++) {
+            word += this.letters[i];
+        }
+        return word;
+    }
+}
+
+var ltw = new LettersToWord();
+ltw.letters.push("B");
+ltw.letters.push("r");
+ltw.letters.push("y");
+ltw.letters.push("c");
+ltw.letters.push("e");
+ltw.toWord();
