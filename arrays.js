@@ -26,3 +26,20 @@ frank.addGrade(30);
 frank.addGrade(40);
 
 console.log(frank.averageGrade());
+
+//Q2
+var arr = ["foo", "bar", "baz"];
+var forward = "";
+var backward = "";
+
+for(i = 0; i < arr.length; i++) {
+    forward += arr[i];
+}
+
+console.log('forward', forward);
+
+for(i = (arr.length-1); i >= 0; i--) {
+    backward += arr[i];
+}
+
+console.log('backward', backward);
